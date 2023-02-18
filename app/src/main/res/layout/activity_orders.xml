@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Orders">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="85dp"
+                android:layout_height="98dp"
+                app:srcCompat="@drawable/logo_transparent" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OrderContainer"
+        android:layout_below="@+id/header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Order"
+            android:text="Order #1"
+            android:layout_marginLeft="10dp"
+            android:textSize="35sp"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OrderContainer"
+        android:id="@+id/StatusContainer">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Status"
+            android:text="Status"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:id="@+id/currentStatusContainer">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentStatus"
+            android:text="Waitaing"
+            android:layout_marginLeft="300dp"
+            android:textSize="18dp"
+android:layout_marginTop="50dp"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:id="@+id/changingStatusContainer">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/changingStatus"
+            android:text="Edit"
+            android:layout_marginLeft="350dp"
+            android:textSize="10dp"
+            android:layout_marginTop="75dp"
+            >
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentStatusContainer"
+        android:layout_marginTop="40dp"
+        android:id="@+id/orderCodeContainer">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderCode"
+            android:text="ORDER CODE: 0001"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_below="@+id/orderCode"
+            android:text="NAME: laila"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cofeetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="COFFEE TYPE: CULOMBIAN"
+            android:textSize="20dp"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cofeetype"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="QUANTITY: 5 KILOS"
+            android:textSize="20dp"
+
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantity"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="PRICE: 40 S.R"
+            android:textSize="20dp"
+
+
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNumber"
+            android:text="PHONE NUMBER: 050000000"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#5F5040"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/price"
+
+
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/locaton"
+            android:text="LOCATION:"
+            android:textSize="20dp"
+            android:textColor="#5F5040"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/phoneNumber"
+
+
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paid"
+            android:layout_below="@id/locaton"
+            android:text="Paid"
+            android:textColor="#5F5040"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/unpaid"
+            android:layout_below="@id/locaton"
+            android:layout_toRightOf="@+id/paid"
+            android:text="Unpaid"
+            android:textColor="#5F5040"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cashOn"
+            android:layout_below="@id/paid"
+            android:text="CASH ON DELVIERY"
+            android:textColor="#5F5040"
+            android:layout_marginLeft="207dp"
+            android:layout_marginBottom="50dp"
+            android:textSize="10sp"
+
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cashOn"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="TOTAL PRICE : 40 S.R"
+            android:textColor="#5F5040"
+            android:textSize="20sp"
+
+
+            >
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

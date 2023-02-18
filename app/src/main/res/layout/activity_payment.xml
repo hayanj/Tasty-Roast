@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E1DC"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="85dp"
+                android:layout_height="98dp"
+                app:srcCompat="@drawable/logo_transparent" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/VisaContainer"
+        android:layout_below="@id/header">
+        <ImageView
+            android:id="@+id/Visa"
+            android:layout_width="216dp"
+            android:layout_height="92dp"
+            app:srcCompat="@drawable/visa"
+            android:layout_marginTop="280dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delContainer"
+        android:layout_below="@id/header"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/del"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:gravity="center_vertical
+
+"
+
+            android:text="MY CART"
+            android:textSize="41sp"
+
+            android:layout_centerInParent="true"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="91dp"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartImageContainer"
+        android:layout_below="@id/header"
+        >
+        <ImageView
+            android:id="@+id/cartImage"
+            android:layout_marginTop="35dp"
+            android:layout_width="54dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="20dp"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="106dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:id="@+id/CheckOutContainer">
+
+        <Button
+            android:id="@+id/CheckOut"
+            android:layout_width="171dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="460dp"
+            android:background="#999383"
+            android:onClick="checkOut"
+
+            android:text="CHECKOUT"
+            android:textColor="#FFFFFF"
+
+
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="225dp"
+            tools:layout_editor_absoluteY="663dp" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:id="@+id/CashContainer">
+        <ImageView
+            android:id="@+id/Cash"
+            android:layout_width="191dp"
+            android:layout_height="78dp"
+            app:srcCompat="@drawable/cash"
+            android:layout_marginTop="520dp"
+            android:layout_centerInParent="true"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="407dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="540dp"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="TOTAL: 40 S.R"
+                android:textSize="28sp"
+                tools:layout_editor_absoluteX="121dp"
+
+                tools:layout_editor_absoluteY="200dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/CashContainer"
+        android:layout_marginRight="-90dp"
+        android:layout_marginTop="280dp"
+        >
+        <RadioButton
+            android:id="@+id/visaPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/cashPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            />
+
+    </RadioGroup>
+</RelativeLayout>
