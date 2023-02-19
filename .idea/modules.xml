@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Roasted.iml" filepath="$PROJECT_DIR$/Roasted.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Roasted.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Roasted.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Roasted.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Roasted.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Roasted.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Roasted.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Roasted.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Roasted.app.unitTest.iml" />
     </modules>
   </component>
 </project>
